@@ -1,0 +1,111 @@
+body{
+    display: block;
+    height: 100%;
+    margin: 0%;
+    padding: 0px;
+    
+}
+
+.note{
+  position: relative;
+  flex-direction: row;
+  height: 100%;
+
+}
+.navigation{
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    background-color:whitesmoke;
+}
+.resourse{
+    position: absolute;
+    right: 0;
+    width: 85%;
+    height: 2000px;
+    background-color:  ;
+}
+
+.main{
+   background-color: whitesmoke;  
+   margin-left: 5px;
+   box-shadow: 5px 5px 5px purple;
+   padding: 2px 5px 2px 2px; 
+   margin: 20px;
+}
+a{  display: flex; 
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 80%;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgb(92, 101, 185);
+    box-shadow: 12px 10px 10px  rgb(65, 65, 134);
+    margin-top: 50px ;
+    margin-left: 6px;
+    border-radius: 10px;
+    color: whitesmoke;
+     
+}
+.subject{
+    display:block;
+    height: 60px;
+    background-color: rgb(39, 27, 92);
+    font-size: 40px;
+    padding-left: 80px;
+    color: whitesmoke;
+    border-radius: 10px;
+    margin: 0 20px 20px 20px;
+    font-weight:bold;
+    
+}
+.blog{
+    border-radius: 10px;
+    background-color: rgb(247, 246, 250);
+    margin: 0 20px 20px 20px;
+     border: groove;
+}
+ #title{
+     padding:17px;
+     line-height: 10px;
+     font-size: 20px;
+     font-weight: 900;
+ }
+#words{
+    padding-left: 17px;
+    line-height: 30px;
+    background-color: rgb(233, 233, 245);
+    margin: 17px;
+    margin-right: 24px;
+}
+
+#keywords{
+   display: inline-block;
+   padding-left: 17px;
+   font-size: 20px;
+   font-weight: bold;
+
+}
+#key{
+    display: inline-block;
+    background-color: rgb(28, 21, 131);
+    color: white;
+    font-weight: bold;
+}
+#code{
+    
+    background-color: rgb(242, 242, 247);
+    width: 95%;
+    color: rgb(16, 71, 116);
+    border-radius: 10px 10 10px 10px;
+    padding-left: 17px;
+    margin: 10px 17px 0 17px;
+    word-wrap: wrap;
+    border: dashed 1px rgb(175, 185, 236);
+    background-color: rgb(244, 245, 234);
+    font-size: 15px;
+  
+
+}

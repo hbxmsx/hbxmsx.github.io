@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+ div{
+  position: relative;
+  width: 30%;
+  min-height: 100px;
+  padding-top: 15px;  /*防止抖动*/
+  box-sizing: border-box;
+}
+textarea{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+pre{
+  display: block;
+  visibility: hidden;
+}
+
+    </style>
+</head>
+
+<body>
+    <div>
+   <div class="hello" v-on:event="handle"></div>
+    </div>
+    
+</body>
+<script>
+ function add(){
+     var i=0;
+     return calculate(){
+         i++;
+     }
+ }
+</script>
+
+
+<script>
+    
+    
+</script>
+</html>

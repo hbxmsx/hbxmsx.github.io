@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/vue.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/kite.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <a href="note.html" class="left" v-on:click="notepage()">
+            <div class="kite">
+               <div class="l-t" ></div>
+               <div class="r-t"></div>
+               <div class="l-b"></div>
+               <div class="r-b"></div>
+         </div>
+    </a>  
+     <a href="personal.html" class="right">
+
+     </a>
+        </div>
+       
+       
+</body>
+
+<script>
+  var app = new Vue({
+      el : '.main',
+      data: {
+
+      },
+      methods: {
+          notepage : function () {
+            window.location.href='note.html';
+          }
+      }
+       
+  })
+</script>
+</html>

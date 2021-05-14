@@ -1,0 +1,80 @@
+
+    .kite{
+        display: flex;
+        width:200px;
+        height: 120px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+  
+  .l-t, .r-t, .l-b, .r-b{
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border: solid  50px;
+   
+    
+  } 
+   
+  .l-t{
+      animation-name: l-t;
+      animation-iteration-count: infinite;
+      animation-duration: 1s;
+  }
+
+  .r-t{
+    animation-name: r-t;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}   
+
+  .l-b{
+    animation-name: l-b;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+.r-b{
+    animation-name: r-b;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+ 
+  @keyframes l-t{
+      from{  
+          border-color: transparent transparent  red  transparent;
+      }
+      to{
+          border-color:  transparent transparent yellow  transparent; 
+      }
+  }
+ 
+  
+  @keyframes r-t{
+      from{  
+          border-color:  transparent  transparent transparent blue;
+      }
+      to{
+          border-color: transparent transparent transparent green;
+      }
+  }
+   
+  @keyframes l-b{
+      from{  
+        border-color: transparent  purple  transparent  transparent;
+      }
+      to{
+          border-color: transparent orange transparent  transparent; 
+      }
+  }
+
+  @keyframes r-b{
+      from{  
+      border-color: purple   transparent  transparent  transparent;
+      }
+      to{
+          border-color: blue transparent  transparent transparent; 
+      }
+  }
+
+
+

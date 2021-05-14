@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/vue.js"></script>
+    <link rel="stylesheet" href="css/note.css">
+    <title>Document</title>
+</head>
+<body>
+     <div id="all">
+
+         <!-- 侧边导航 -->
+        <div class="navigation">
+                    <a href="#html">HTML</a>
+                    <a href="#css">CSS</a>
+                    <a href="#js">JS</a>
+                    <a href="#ajax">Ajax</a>
+                    <a href="#vue">Vue</a>
+                    <a href="#other">other</a>
+
+        </div>
+        <!-- 模板/模板/模板/模板/模板/模板/模板/模板/模板/模板/模板/ -->
+ <!--    <div class="blog">  
+            <div id="title">Tittle：a标签的使用</div>   
+            <div id="keywords">keyWords</div> <div id="key">#标点</div> <div id="key">#关键字</div>
+            <div id="words">内容区域：</div>  
+<textarea name="code" id="code" cols="30" rows="10">  
+
+</textarea>
+        </div>         -->
+       <!-- 模板/模板/模板/模板/模板/模板/模板/模板/模板/模板/模板/ -->
+
+          
+      <!-- 内容部分-=====================================================================-->
+
+
+         <div class="resourse">  
+         <!---/\/\/\/\/\//\/\/\/\----HTML---/\/\/\/\/\\/\/\/\/\/\/\/\/\/\\/\/\/----------- -->
+            <div id="html" class="subject">THML</div> 
+            <div class="blog">
+                <div id="title">Tittle：video标签</div> 
+                <div id="keywords">keyWords：</div> <div id="key">#video</div>  
+                <div id="words">
+video标签仅支持三种格式视频：MP4 WebM Ogp<br>                
+autoplay：设置自动播放，谷歌浏览器不可自动播放视频，在设置静音以后可自动播放，但没有声音<br>
+muted：视频静音
+controls：显示视频播放控件<br>
+loop：循环播放<br>
+poster：在视频未加载完成时候视频播放区域显示的图片<br>
+谷歌浏览器不支持自动播放声音
+                </div>
+<textarea name="code" id="code" cols="30" rows="4">
+
+<video src="meida/Mojito.mp4" autoplay="autoplay" muted="muted" controls="controls" loop="loop" poster="meida/jaychou.jpg" ></video>
+</textarea>
+            </div>
+ <!------------------------------------------------------------------------------------------  -->
+ <div class="blog">  
+    <div id="title">Tittle：语义化标签</div>   
+    <div id="keywords">keyWords：</div> <div id="key">#Semantic tags</div>  
+    <div id="words">
+        HTML5通过语义化标签，来让标签的书写更方便，更具有标识度。先前都是通过div设置盒子，相对来说不容易理解，
+        但是对于敲代码的时候来说，区别不是很大，似乎就是直接给了类，省区了div标签，但是语义化标签主要是供给搜索引擎识别的。
+        </div>  
+</div>  
+
+
+
+
+            
+            
+<!-- ----------------------------CSS---------------------------------------------------------- -->
+            <div id="css" class="subject">CSS</div>
+        
+
+            <div class="blog">  
+                <div id="title">Tittle：盒子模型</div>   
+                <div id="keywords">keyWords：</div> <div id="key">#padding</div> <div id="key">#margin</div> <div id="key">#border</div>
+                <div id="words">padding是内容距离子盒子的距离，padding：10px，内容距离子盒子的上下左右各10像素。
+                    一个值 ：还可以确定不同位置的padding值：padding-left:10px，内容距离盒子左面10px。padding-right:10px；padding-button：10px； padding-top：10px ，效果一样<br>
+                    两个值：pading：10px 20px；前面一个值表示上下的值，后面一个值表示左右的值。<br>
+                    三个值：padding：10px 20px 10px；第一个值表示上，第二个值表示左右，第三个值表示下。<br>
+                    四个值：padding：10px 20px 10px 10px；则表示从顶部开始，逆时针旋转的各个面的距离。<br>
+                    padding有可能会撑破盒子，使盒子塌陷，因此在使用padding 的时候，要考虑内容的大小，盒子的大小，以及padding的值：padding +内容<=盒子的大小，这样就不会塌陷了。<br>
+                    margin代表盒子与其他盒子的距离<br>
+                    padding代表盒子内容与盒子的距离
+            </div>  
+            </div>
+ <!-- ==================================================================================================== -->
+ <div class="blog">  
+    <div id="title">Tittle：定位</div>   
+    <div id="keywords">keyWords：</div> <div id="key">#positon</div> <div id="key">#子绝父相</div>  
+    <div id="words"> 
+        静态定位：position:static，默认的定位方式，不改变标准来布局<br>
+        相对定位：positon:relative，盒子相对于先前的位置做出位置变动，同时先前的位置保留<br>
+        绝对定位：positon:absolute，盒子相对于最近的一级拥有定位的父级产生的位置偏移，不保留先前位置<br>
+        固定定位：positon:fixed，相对于浏览器窗口的定位，固定在窗口，不占有原先的位置<br>
+        黏性定位：positon:sticky，浏览器可视区作为参照，到达可视区边缘停止移动<br>
+</div>  
+</div>
+
+ <!-- ==================================================================================================== -->
+ <div class="blog">  
+    <div id="title">Tittle：精灵图</div>   
+    <div id="keywords">keyWords：</div> <div id="key">#sprite</div> 
+    <div id="words"> 
+        精灵图（sprite），精灵图是把需要用到的小图标都放在一张大的图上面，然后在页面访问数据库申请加载图片的时候，那么这张大图上的小图标就可以只加载一次，把这张大图加载到浏览器上，然后通过设置这张背景图片在盒子先的位置，来显示不同的图标，在需要使用背景图片的时候，url指向同一张背景图片。实现了只加载一次，就得到了多个图标，减少了访问次数，减小数据库的压力。
+        在把图片作为背景图片的时候，以左上角与盒子对齐，然后通过position设置背景图片需要显示的位置，position的x,y的值的设置也是以左上角作为零点设置的，，区别于一般的坐标系。
+         <br>
+        总结：精灵图就是将图标集成到一张图片，然后通过设置位置对同一张图片的重复使用，来达到减少访问数据库次数的目的。
+       
+</div>
+
+</div>
+ 
+ <!-- ========================================================================================================== --> 
+ <div class="blog">  
+    <div id="title">Tittle：三角形</div>   
+    <div id="keywords">keyWords：</div> <div id="key">#triangle</div>  
+    <div id="words">定义一个盒子（div)，不定义宽高，只定义边框，那么内容部分为零，所看到的部分就是边框，一个大小为0，只有边框的盒子，通过设置边框的大小，改变盒子的占位大小。</div>  
+<textarea name="code" id="code" cols="30" rows="11">  
+            .triangle{
+                margin: auto;
+                width: 0px;
+                height: 0px;
+                border: 2px;
+                border-top:50px solid rgb(241, 238, 7);
+                border-right: 50px solid red;
+                border-bottom: 50px solid seagreen;
+                border-left:50px solid  hsl(0, 87%, 27%);  
+</textarea>
+</div>    
+
+
+ <!-- ==================================================================================================== -->
+ <div class="blog">  
+    <div id="title">Tittle：flex</div>   
+    <div id="keywords">keyWords：</div> <div id="key">#flex布局</div> 
+    <div id="words"> 
+      flex弹性布局，简单易操作<br>
+      flex-decoration: rew/colum   主轴是x轴，还是y轴<br>
+      justify-conten:left/center/right    主轴方向上的元素排列方式<br>
+      align-content: left/center/right    侧轴方向上的元素的排列方式<br>
+      flex:number    用在子项，number代表了该子项所占的剩余空间的比例.
+       
+</div>
+
+</div>
+
+
+  <!---/\/\/\/\/\//\/\/\/\----JS---/\/\/\/\/\\/\/\/\/\/\/\/\/\/\\/\/\/----------- -->
+            <div id="js" class="subject">JS</div>
+            
+ <!-- ========================================================================================================== --> 
+ <div class="blog">  
+    <div id="title">Tittle：闭包</div>   
+    <div id="keywords">keyWords：</div> <div id="key">#closure</div>  
+    <div id="words">在程序运行中内存是有限的，当数据不再被使用的时候，就会被系统回收内存。所以一般的函数执行完以后在函数的作用域范围内的变量就会被回收<br>
+     但是如果函数引用了函数作用域范围外部的变量，那么系统就会保存这个变量，不认为这个变量是可回收的，这个变量就得以存在，形成闭包，这个函数就拥有了自己的私有变量。
+    </div>  
+<textarea name="code" id="code" cols="30" rows="8">  
+    function add(){
+        var i=0;
+        return calculate(){
+            i++;
+        }
+    }           
+</textarea>
+</div>    
+
+ <!-- ========================================================================================================== --> 
+ <div class="blog">  
+    <div id="title">Tittle：深浅拷贝</div>   
+    <div id="keywords">keyWords：</div> <div id="key">#deep copy</div>  <div id="key">#shallow copy</div> 
+    <div id="words">对于基本数据类型进行赋值，得到的是另一个有相同值的独立变量，但是对一个引用类型的数据进行赋值操作，得到的只是相同的堆中的地址。 <br>
+        浅拷贝：如果一个引用数据类型实例（例如对象)中包含了引用对象和基本数据类型的变量，那么浅拷贝只能得到这个实例中的基本数据类型，对于实例中的引用类型变量，仍然只得到地址。<br>
+        深拷贝：对引用数据类型中包含的引用数据类型变量进行遍历，知道进行的所有赋值操作不包含引用变量，得到一个完全独立的对象。<br>
+        总的来说，就是因为对象赋值只能得到地址，所以导致了对于对象（对象中包含其他引用数据类型）的赋值操作不能得到完全独立的变量（也就是浅拷贝)，所以遍历引用数据类型（深拷贝）
+
+    </div>  
+</div>    
+
+
+
+ <!-- ========================================================================================================== --> 
+ <div class="blog">  
+    <div id="title">Tittle：原型\原型链</div>   
+    <div id="keywords">keyWords：</div> <div id="key">#prototype</div>  <div id="key">_proto_</div> 
+    <div id="words">原型：prototype，是函数的构造函数，期中包含了定义的数据类型和结构<br>
+        原型链：_proto_，在原型中存储的有原型链，父级的原型会作为子级的原型链存在在子级的原型中，子级可以调用其原型链上的
+        定义的变量，现在原型中找，找不到再进入原型链，原型链的尽头:-->object，js中的东西基于对象，obje的原型链就是obje。
+    </div>  
+</div>    
+
+
+
+
+
+
+
+
+ <!---/\/\/\/\/\//\/\/\/\----AJAX---/\/\/\/\/\\/\/\/\/\/\/\/\/\/\\/\/\/----------- -->
+ <!-- ========================================================================================================== --> 
+               <div id="ajax" class="subject">Ajax</div>
+            
+ <div class="blog">  
+    <div id="title">Tittle：Ajax</div>   
+    <div id="keywords">keyWords：</div> <div id="key">#Ajax</div>  
+    <div id="words"> Ajax：异步的JavaScript和xml。通过Ajax实现局部刷新，增强用户体验和浏览器的运行速度。<br>
+        原生的ajax的使用：1.创建XMLhttpRequest()实例  2.装载数据，请求的路径、提交方式、以及携带的数据，然后sed发送请求
+        3.接手数据，展示数据<br>
+    </div>  
+</div>             
+          
+ <!-- ========================================================================================================== --> 
+ <div class="blog">  
+    <div id="title">Tittle：axios</div>   
+    <div id="keywords">keyWords：</div> <div id="key">#axios</div>  
+    <div id="words">
+ axios是对于ajax的封装，基于promise,可以并发执行请求。<br>
+使用 npm: npm i axios
+使用 cdn:  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+引入axios:   import Axios from 'axios'
+使用格式：Axios.请求方式(url).then((res) => { 获取数据res.data }).catch((err) => { })
+    </div>  
+</div>             
+          
+
+
+
+
+
+   <!---/\/\/\/\/\//\/\/\/\----VUE---/\/\/\/\/\\/\/\/\/\/\/\/\/\/\\/\/\/----------- -->           
+            <div id="vue" class="subject">VUE</div>
+ <!-- ========================================================================================================== --> 
+            <div class="blog">  
+                <div id="title">v-show/v-if</div>   
+                <div id="keywords">keyWords：</div> <div id="key">#v-show</div>  <div id="key">#v-if</div>  
+                <div id="words">
+                v-show：通过true or false来调用display的值，来决定节点是否展示
+                v-if：true则将节点显示在页面，false则移除节点，在dom树上该节点不存在      
+                </div>  
+            </div>             
+                      
+  <!-- ========================================================================================================== --> 
+           <div class="blog">  
+           <div id="title">v-model/v-bind</div>   
+             <div id="keywords">keyWords：</div> <div id="key">#v-model</div>  <div id="key">#v-bind</div>  
+           <div id="words">
+             v-model：数据双向绑定，通过页面和vue实例中都可以改变数值，页面上的变量和实例中的变量实时变化<br>
+             v-bind：数据，时间的绑定，页面上不能直接更改数值      
+      </div>  
+     </div>             
+          
+<!-- ========================================================================================================== --> 
+        <div class="blog">  
+            <div id="title">v-on/v-bind</div>   
+              <div id="keywords">keyWords：</div> <div id="key">#on</div>  
+            <div id="words">
+             v-on绑定事件，对事件进行监听，简写为@，v-on:click等同于@click   <br>
+             v-on:事件="操作函数" 
+       </div>  
+      </div>             
+           
+            
+          
+<!-- ========================================================================================================== --> 
+<div class="blog">  
+    <div id="title">防抖/节流</div>   
+      <div id="keywords">keyWords：</div> <div id="key">#防抖</div>  <div id="key">#节流</div>  
+    <div id="words">
+      防抖：在程序运行过程中，有些操作会在短时间内多次触发，影响用户体验和程序运行，占用内存等。
+      比如监听的函数会在几秒内被多次触发。防抖就是现在事件触发的频率。事件延迟执行，在延迟期间再次被触犯
+      就重新开始计时。<br>
+      节流：如果事件一直被触发，计时器无法完成一次完整的计时，那么操作就一直无法执行
+      为了使操作间隔一定时间就执行，节流，节流是在时间被触发以后，开始计时的时候屏蔽计时器重置的操作
+      这样计时器就可以完成计时，执行操作。
+</div>  
+</div>             
+   
+
+   <!---/\/\/\/\/\//\/\/\/\----OTHERL---/\/\/\/\/\\/\/\/\/\/\/\/\/\/\\/\/\/----------- -->           
+            <div id="other" class="subject">other</div>
+       
+ <!-- ========================================================================================================== --> 
+ <div class="blog">  
+    <div id="title">Tittle：实时显示事件</div>   
+    <div id="keywords">keyWords：</div> <div id="key">#showtime</div>  
+    <div id="words"> 
+        设置函数获取时间数据，然后将数据与页面的时间绑定然后settimeinterval，每隔一秒钟就
+        就执行一次获取时间的函数并打印到页面，实现每秒更新页面时间。
+    </div>  
+<textarea name="code" id="code" cols="30" rows="110">  
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    
+        <style>
+    
+            body {
+                 display:flex;
+                 justify-content: center;
+    
+            }
+            #time{
+                display: flex;
+                 height: 500px;
+                width: 80%;
+                background-color: wheat; 
+                justify-content: center;
+                 align-items: center;
+     
+               
+            }
+            p{
+               
+                 background-color: skyblue;
+                 font-size: 50px;
+                 display: inline-block;
+                 margin: auto;
+                 
+    
+            }
+        </style>
+    </head>
+    <body>
+          <div id="time">
+                <p id="ts">time</p>
+          </div>
+    </body>
+    
+    
+    
+    <script>
+     
+     var d = new Date();
+     console.log(d);
+     function gettime(){
+    
+          var t = new Date();
+          var tt=  document.getElementById("ts");
+           tt.innerHTML=t;
+          
+     }
+    
+       setInterval(() => {
+           gettime();
+           
+         }, 1000);
+    
+    </script> 
+    </html>
+                
+</textarea>
+</div>    
+
+
+
+
+       </div>    <!--内容部分标签，删了会蛋疼  -->
+
+     </div>
+       
+
+</body>
+<script>
+    var app = new Vue({
+        el:'#all',
+        data: {
+
+        },
+       
+    })
+   
+</script>
+ 
+</html>
